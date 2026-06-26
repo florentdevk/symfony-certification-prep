@@ -20,12 +20,10 @@ enum AlertType: string
     case BalanceBelow = 'balance_below';
 }
 
-// Get value
-AlertType::BalanceAbove->value; // 'balance_above'
+AlertType::BalanceAbove->value;
 
-// From value
-AlertType::from('balance_above'); // AlertType::BalanceAbove
-AlertType::tryFrom('unknown');    // null (no exception)
+AlertType::from('balance_above');
+AlertType::tryFrom('unknown');
 ```
 
 ## Enum methods
